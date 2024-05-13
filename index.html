@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanhan Rauman Pyörävuokraus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="Logo.png">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">Rauma</div>
+        <div class="nav-items">
+            <a href="#" onclick="navigateTo('home')">Koti</a>
+            <a href="#" onclick="navigateTo('about')">Tietoja</a>
+            <a href="#" onclick="navigateTo('bikes')">Pyörät</a>
+            <a href="#" onclick="navigateTo('contact')">Yhteystiedot</a>
+        </div>
+    </nav>
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="column-left">
+                <h1>WANHAN RAUMAN PYÖRÄVUOKRAUS</h1>
+                <p>Koe Rauma pyörän päältä</p>
+                <button onclick="showDetails()">Lisätietoja</button>
+            </div>
+            <div class="column-right">
+                <img src="Logo2.png" alt="Wanha Rauma" class="hero-image">
+            </div>
+        </div>
+    </section> 
+
+    <!-- Placeholder sections for other pages -->
+    <section id="about" style="display: none;">
+        <h2>Tietoja</h2>
+        <p>Wanhan Rauman Pyörävuokraus tarjoaa laadukkaita pyöriä vuokralle Rauman alueella. Meillä on laaja valikoima erilaisia pyöriä kaikenlaisiin tarpeisiin ja aktiviteetteihin. Olipa kyseessä sitten rento kaupunkiajelu tai seikkailu maastossa, meillä on sinulle sopiva pyörä!</p>
+        <p>Olemme avoinna maanantaista perjantaihin klo 9–17 ja lauantaisin klo 10–14. Tervetuloa tutustumaan valikoimaamme!</p>
+    </section>
+    
+    <section id="bikes" style="display: none;">
+        <h2>Pyörät</h2>
+        <p>Meiltä löydät laadukkaat ja hyvin huolletut pyörät eri käyttötarkoituksiin:</p>
+        <ul>
+            <li>City-pyörät</li>
+            <li>Trekking-pyörät</li>
+            <li>Maastopyörät</li>
+            <li>Sähköpyörät</li>
+        </ul>
+        <p>Ota yhteyttä ja varaa pyöräsi jo tänään!</p>
+    </section>
+    
+    <section id="contact" style="display: none;">
+        <h2>Yhteystiedot</h2>
+        <p>Osoite: Esimerkkikatu 123, 12345 Rauma</p>
+        <p>Puhelinnumero: 010 123 4567</p>
+        <p>Sähköposti: info@wanhanraumanpyoravuokraus.fi</p>
+    </section>
+</body>
+</html>
